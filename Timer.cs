@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 public class Timer : MonoBehaviour
 {
@@ -22,5 +24,7 @@ public class Timer : MonoBehaviour
         {
             EditorSceneManager.LoadScene(scenceName);
         }
+        timerText.text = minute.ToString();
+        timerText.text = second.ToString();
     }
 }
